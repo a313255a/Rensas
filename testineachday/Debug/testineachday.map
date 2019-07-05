@@ -1,0 +1,80 @@
+Optimizing Linkage Editor (V.10.02.00.000)        20-Aug-2018 10:38:56
+
+*** Options ***
+
+-subcommand=D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\testineachday.hlk
+-noprelink
+-rom=D=R,D_1=R_1,D_2=R_2
+-nomessage
+-list="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\testineachday.map"
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/01000,PResetPRG/0FFFF8000,C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L/0FFFF8100,FIXEDVECT/0FFFFFFD0
+-nologo
+-input="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\clock_init.obj"
+-input="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\dbsct.obj"
+-input="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\intprg.obj"
+-input="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\resetprg.obj"
+-input="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\sbrk.obj"
+-input="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\testineachday.obj"
+-input="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\vecttbl.obj"
+-library="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\testineachday.lib"
+-output="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\testineachday.abs"
+-end
+
+*** Error information ***
+
+** L1100 (W) Cannot find "SU" specified in option "start"
+** L1100 (W) Cannot find "L" specified in option "start"
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+B_1
+                                  00001000  00001000         0   1
+R_1
+                                  00001000  00001000         0   1
+B_2
+                                  00001000  00001109       10a   2
+R_2
+                                  0000110a  0000110a         0   2
+B
+                                  0000110c  00001517       40c   4
+R
+                                  00001518  00001537        20   4
+SI
+                                  00001538  00001837       300   4
+PResetPRG
+                                  ffff8000  ffff8022        23   1
+C_1
+                                  ffff8100  ffff8100         0   1
+C_2
+                                  ffff8100  ffff8100         0   2
+C
+                                  ffff8100  ffff8117        18   4
+C$DSEC
+                                  ffff8118  ffff813b        24   4
+C$BSEC
+                                  ffff813c  ffff8153        18   4
+C$VECT
+                                  ffff8154  ffff8553       400   4
+D_1
+                                  ffff8554  ffff8554         0   1
+D_2
+                                  ffff8554  ffff8554         0   2
+D
+                                  ffff8554  ffff8573        20   4
+P
+                                  ffff8574  ffffa037      1ac4   1
+PIntPRG
+                                  ffffa038  ffffa124        ed   1
+W_1
+                                  ffffa125  ffffa125         0   1
+W_2
+                                  ffffa126  ffffa165        40   2
+W
+                                  ffffa168  ffffa168         0   4
+$ADDR_C_FFFFFF80
+                                  ffffff80  ffffff83         4   1
+FIXEDVECT
+                                  ffffffd0  ffffffff        30   4

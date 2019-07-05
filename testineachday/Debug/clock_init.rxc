@@ -1,0 +1,7 @@
+-cpu=rx200
+-lang=c
+-output=obj="D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\Debug\clock_init.obj"
+-debug
+-optimize=0
+"D:\googlecloud\實驗\第三階段程式\多參數Rensas硬版case版本-通道五2018-08-18 new\testineachday\clock_init.c"
+-nologo
